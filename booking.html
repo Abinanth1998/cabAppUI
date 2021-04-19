@@ -16,17 +16,29 @@
         <input type="date" name="journeydate" min="2019-01-01" max="2023-12-31"><br>
         <label>timing</label>
         <input type="time" name="journeytime" id="time"><br>
-        <label>GST</label>
-        <input type="number" name="gst"><br>
+        <!-- <label>GST</label>
+        <input type="number" name="gst"><br> -->
         <label>senior citizen</label> 
         <input type="checkBox" name="senior-citizen" id="senior"><br>
         <label>Gender</label>
         <label>M</label>
-        <input type="radio" name="gender" id="gender">
+        <input type="radio" name="gender" id="gender"><br>
         <label>W</label>
         <input type="radio" name="gender" id="gender"><br>
-        <button type="submit">Submit</button>
-    </form>       
+        <label for="getting travel vechile type">Enter the mode of transport in number</label>
+<input type="number" id="vehicle_type"name="vehicletype" min="1" max="3"/><br>
+<label for="number of people">Enter the number of people you need to travel</label>
+<input type="number" name="people" id="people"><br>
+        <button type="submit" onClick="generateGst()">Get Fare</button>
+    </form>   
+    <script>
+            function generateGst() {
+                let num = document.getElementById("people").value;
+                document.write(num+(num*7.0/100.0));
+                document.write("Cab Booked Sucessfully")
+            }
+            
+            </script>    
 </div>
 </body>
 </html>
