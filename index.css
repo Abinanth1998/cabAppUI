@@ -1,0 +1,33 @@
+.registration_form {
+color: brown;
+font-style: normal;
+margin-left: 40%
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;  
+    background-color: aqua
+}
+.registration_form_content_name{
+    padding: 20px;
+}
+.registration_form_content_password{
+    padding: 20px;
+}
+registration_form_content_phone {
+    padding: 20px;
+}
+.registration_form_content{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.registration_form_content_button1{
+    padding-block-start: 30px
+}
+.registration_form_content_button2{
+    padding-left: 100px;
+    
+}
