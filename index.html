@@ -2,24 +2,64 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cab UI</title>
+<title>Cab-Booking</title>
+<link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-<div class=registration-form>
-	<form action="cabType.html">
+<div class=registration_form>
+	<form onsubmit="login()">
+		<div id="header">
 		<h1>Login Page</h1>
+		</div>
+		<div class=registration_form_content>
+			<div class=registration_form_content_name>
+			<label for="name">Enter the name</label>
+			<input type="text" id="username" placeholder="enter the name" required/><br>
+		</div>
+		<div class="registration_form_content_number">
 			<label for="name">Enter the phone number</label>
-			<input type="text" placeholder="enter the phone number" required/><br><br>
+			<input type="text" id="phone" placeholder="enter the phone number" required/><br>
+		</div>
+		<div class="registration_form_content_password">
 			<label for="password">Enter the password</label>
-			<input type="password" placeholder="enter the password" required/><br><br>
+			<input type="password" id="password" placeholder="enter the password" required/><br>
+		</div>
+		<div class="registration_form_content_button1">
+			<button type="reset">Reset</button>
+		</div>
+		<!-- <button type="button" onclick="hello()">clickMe</button> -->
+		<div class="registration_form_content_button2">
 			<button type="submit">Submit</button>
+		</div>
+		</div>
 	</form>
 </div>
+<!-- <style>
+	.registration_form .h1{
+		color: aquamarine;
+		font-family: cursive;
 
-
-
+	}
+</style> -->
+<script>
+function login() {
+	event.preventDefault();
+	alert("login")
+	let username=document.querySelector("#username").value;
+	let password=document.querySelector("#password").value;
+	let phone=document.querySelector("#phone").value;
+	alert("username: "+username)
+	if(username!=null && password!=null && phone.length==10) {
+		alert("Logined Sucess");
+		window.location.href="cabType.html"
+	} else {
+		alert("failed")
+	}
+}
+// function hello() {
+// 	alert("hello");
+// }
+</script>
 
 </body>
 </html>
-
