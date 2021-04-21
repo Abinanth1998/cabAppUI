@@ -1,14 +1,15 @@
 .registration_form {
 color: brown;
 font-style: normal;
-margin-left: 40%
 }
 
 #header {
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex-flow: column;  
     background-color: aqua
+    
 }
 .registration_form_content_name{
     padding: 20px;
@@ -29,5 +30,6 @@ registration_form_content_phone {
 }
 .registration_form_content_button2{
     padding-left: 100px;
+    padding-bottom: 200px
     
 }
