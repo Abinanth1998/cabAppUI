@@ -44,16 +44,16 @@
 <script>
 function login() {
 	event.preventDefault();
-	alert("login")
+	// alert("login")
 	let username=document.querySelector("#username").value;
 	let password=document.querySelector("#password").value;
 	let phone=document.querySelector("#phone").value;
 	alert("username: "+username)
-	if(username!=null && password!=null && phone.length==10) {
+	if(username!=null && password!=null && phone.length==10 && Number.isInteger(phone)==true) {
 		alert("Logined Sucess");
 		window.location.href="cabType.html"
 	} else {
-		alert("failed")
+		alert("please check the username and password")
 	}
 }
 // function hello() {
