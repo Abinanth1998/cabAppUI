@@ -1,0 +1,12 @@
+.heading{
+    background-color: aqua;
+    font-size: 30px;
+    
+}
+table{
+    font-size: 35px;
+    padding-bottom: 30px;
+    padding-block-start: 20px;
+    border:1px solid white;
+    margin-top: 30px;
+}

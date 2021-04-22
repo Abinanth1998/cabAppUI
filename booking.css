@@ -1,0 +1,59 @@
+form{
+
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-right: 200px;
+   font-size: 20px;
+    border: aquamarine
+}
+.coloumn-lg-6{
+
+    border: solid;
+    border-color: brown; 
+    padding-inline-end: 40px;
+    border: 30px;
+    
+    
+
+}
+.header {
+    color: brown;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;  
+    background-color: aqua;
+    padding: 10px;
+    
+}
+.form-block{
+    border: solid aquamarine;
+    color: brown;
+    padding-left: 170px;
+}
+.logout {
+    padding: 5px
+}
+.button{
+    padding:5px
+}
+.dateOfBirth{
+    padding: 5px;
+}
+.kilometer{
+    padding: 5px;
+}
+.cabType{
+    padding: 5px;
+
+}
+.gender{
+    padding: 5px;
+
+}
+.timing{
+    padding:5px;
+}
+.journey_date{
+    padding:5px;
+}
