@@ -29,6 +29,7 @@ function generateGst() {
 
     document.getElementById("amount").innerHTML=totalAmount;
     
+    
     let dateOfBirth=document.querySelector("#date").value;
     let dob=new Date(dateOfBirth);
     let year=dob.getUTCFullYear();
@@ -44,10 +45,12 @@ function generateGst() {
         seniorAmount=totalAmount/2;
         document.getElementById("senior");
         document.getElementById("amount").innerHTML=seniorAmount;
+        
     }
    
    
 }
-  function logout() {
-    window.location.href="index.html"
+  function thankyouMessage() {
+    
+    window.location.href="bookedMessage.html"
 }
